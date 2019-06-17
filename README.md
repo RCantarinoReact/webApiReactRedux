@@ -1,1 +1,1 @@
-# Simple project React-Redux-.NET Core-EF + Core-IoC
+# Simple project React-Redux-.NET Core 2.2-EFCore-IoC
