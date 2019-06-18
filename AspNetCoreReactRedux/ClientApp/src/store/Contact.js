@@ -7,14 +7,12 @@
 
 export const actionCreators = {
     requestContacts: () => async (dispatch, getState) => {
-
         const url = 'api/Contact/Contacts';
         const response = await fetch(url);
         const contacts = await response.json();
         dispatch({ type: 'FETCH_CONTACTS', contacts });
     },
     saveContact: contact => async (dispatch, getState) => {
-
         const url = 'api/Contact/SaveContact';
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
